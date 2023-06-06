@@ -1,6 +1,5 @@
 import turtle as t
-
-def rectangle (horizontol,vertical,color):
+def rectangle (horizontal,vertical,color):
     t.pendown()
     t.pensize(1)
     t.color(color)
@@ -11,49 +10,64 @@ def rectangle (horizontol,vertical,color):
         t.forward(vertical)
         t.right(90)
     t.end_fill()
-    penup()
-    t.speed('slow')
-    T.bgcolor('thistle')
-    #feet
-    t.goto(-100,-150)
-    rectangle(50,20,'yellow')
-    t.goto(-30,-150)
-    rectangle(50,20,'yellow')
-    #legs
-    t.goto(-25,-50)
-    rectangle(15,100,'purple')
-    t.goto(-55,-50)
-    rectangle(-15,100,'purple')
-    #body
-    t.goto(-90,100)
-    rectangle(100,150,'Deep pink')
-    #arms
-    t.goto(-150,70)
-    rectangle(60,15,'purple')
-    t.goto(-150,110)
-    rectangle(15,40,'purple')
+    t.penup()
 
-    t.goto(10,70)
-    rectangle(60,15,'purple')
-    t.goto(55,110)
-    rectangle(15,40,'purple')
-    #neck
-    t.goto(-50,120)
-    rectangle(15,20,'purple')
-    #head
-    t.goto(-85,170)
-    rectangle(80,50,'Deep pink')
-    #eyes
-    t.goto(-60,160)
-    rectangle(30,10,'white')
-    t.goto(-55,155)
-    rectangle(5,5,'black')
-    t.goto(-40,155)
-    rectangle(5,5,'black')
-    #mouth
-    t.goto(-65,135)
-    rectangle(40,5,'black')
-    t.hideturtle()
+    
+t.penup()
+t.speed('slow')
+t.bgcolor('Goldenrod')
+
+ 
+#feet
+t.goto(-100,-150)
+rectangle(50,20,'Navy')
+t.goto(-30,-150)
+rectangle(50,20,'Navy')
+ 
+#legs
+t.goto(-25,-50)
+rectangle(15,100,'Maroon')
+t.goto(-55,-50)
+rectangle(-15,100,'Maroon')
+
+#body
+t.goto(-90,100)
+rectangle(100,150,'Deep pink')
+ 
+ #arms
+t.goto(-150,70)
+rectangle(60,15,'Maroon')
+t.goto(-150,110)
+rectangle(15,40,'Maroon')
+
+t.goto(10,70)
+rectangle(60,15,'Maroon')
+t.goto(55,110)
+rectangle(15,40,'Maroon')
+ 
+#neck
+t.goto(-50,120)
+rectangle(15,20,'Maroon')
+ 
+#head
+t.goto(-85,170)
+rectangle(80,50,'Gold')
+
+#eyes
+t.goto(-60,160)
+rectangle(30,10,'white')
+t.goto(-55,155)
+rectangle(5,5,'black')
+t.goto(-40,155)
+rectangle(5,5,'black')
+
+#mouth
+t.goto(-65,135)
+t.right(5)
+t.left(5)
+rectangle(40,5,'black')
+
+t.hideturtle()
     
         
     
